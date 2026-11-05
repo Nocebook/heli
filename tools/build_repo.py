@@ -16,9 +16,9 @@ import tarfile
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DEBS_DIR = os.path.join(ROOT, "debs")
 
-REPO_ORIGIN = "Axs"
-REPO_LABEL = "Axs Repo"
-REPO_DESCRIPTION = "Axs 的越狱插件源"
+REPO_ORIGIN = "Heli"
+REPO_LABEL = "Heli"
+REPO_DESCRIPTION = "Heli 的越狱插件源"
 
 # Packages 条目里字段的固定顺序，Sileo / Saily / Zebra 都能吃。
 FIELD_ORDER = [
