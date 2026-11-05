@@ -1,16 +1,16 @@
 Package: com.heli.liquid
 Name: liquid (HL)
-Version: 6.2.0-28
+Version: 6.2.1-30
 Architecture: iphoneos-arm64
 Section: Heli
 Maintainer: Heli
 Author: Heli
 Depends: mobilesubstrate | ellekit, preferenceloader, firmware (>= 15.0)
-Description: 把系统毛玻璃重做成液态玻璃：更强的模糊与饱和度、整片玻璃膜、定向描边与圆角边缘折射，覆盖控制中心、Dock、文件夹、通知、弹窗、键盘与小组件。设置里可调全部参数、按场景开关、隐藏灵动岛，并用三档性能模式把耗电压到最低。
-Filename: debs/com.heli.liquid_6.2.0-28_iphoneos-arm64.deb
-Size: 54652
+Description: 把系统毛玻璃重做成液态玻璃：更强的模糊与饱和度、整片玻璃膜、定向描边与圆角边缘折射，覆盖控制中心、Dock、文件夹、通知、弹窗与小组件。锁屏与整屏背景虚化完全交给系统，动画期间不改半径，避免上滑解锁卡死。设置里可调全部参数、按场景开关、隐藏灵动岛。
+Filename: debs/com.heli.liquid_6.2.1-30_iphoneos-arm64.deb
+Size: 54980
 Installed-Size: 260
-MD5sum: cf7ede1239ead5013c4bf687a745e48b
-SHA1: 80758165840287937149e91bd6d911a1c4109887
-SHA256: 29c3f2c1e5d62866be32090922a9ca6bfa5273c8860d79424d4aba71ef72536a
+MD5sum: 05e191e35e3d13e1331e88e7760e7836
+SHA1: 3774ecae8c09e9c8deebd07329f3c5aae8732516
+SHA256: c9ba0c21c1d09b29535fbc627d155033956f53f9d3d1c42bd18ecf2286190ed2
 Icon: https://nocebook.github.io/heli/icon.png
