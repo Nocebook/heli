@@ -1,16 +1,16 @@
 Package: com.heli.liquid
 Name: liquid (HL)
-Version: 6.1.0-21
+Version: 6.1.0-23
 Architecture: iphoneos-arm64
 Section: Heli
 Maintainer: Heli
 Author: Heli
 Depends: mobilesubstrate | ellekit, preferenceloader, firmware (>= 15.0)
 Description: 把系统毛玻璃重做成液态玻璃质感，覆盖控制中心、Dock、文件夹、通知与小组件。装完桌面会出现 liquid 图标，里面可以调模糊半径、饱和度、乳白浓度、边缘高光，以及各场景开关；小组件按 30~50MB 内存预算分级，默认零图层描边，避免地图类组件被系统杀掉后空白。
-Filename: debs/com.heli.liquid_6.1.0-21_iphoneos-arm64.deb
-Size: 46564
+Filename: debs/com.heli.liquid_6.1.0-23_iphoneos-arm64.deb
+Size: 48904
 Installed-Size: 240
-MD5sum: 226e6740ba06d554baf5f03b07658e97
-SHA1: 55917d4e5e541a238ad87af9878ef40c8ee7fa6c
-SHA256: 13823470ae876db1d40b9da5e7f533520be3e910155c0e9810ec3fee485420a5
+MD5sum: 80f25a2f114257fa9924acc182ad2c27
+SHA1: 9376fb7d547192b07043c97bd7ba1acfa783902c
+SHA256: 3c326aff466a3b6a03bcc5a601cecd756bd0430dc23fdfe5460b9f102a840a17
 Icon: https://nocebook.github.io/heli/icon.png
