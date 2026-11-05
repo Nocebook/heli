@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Axs Repo · 越狱插件源</title>
+<style>
+  :root {
+    --ink: #16151a;
+    --ink-soft: #5d5b63;
+    --line: #e2ded7;
+    --paper: #fbfaf7;
+    --accent: #8a3324;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 48px 22px 64px;
+    background: var(--paper);
+    color: var(--ink);
+    font: 16px/1.7 -apple-system, "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", sans-serif;
+  }
+  main { max-width: 620px; margin: 0 auto; }
+
+  header { padding-bottom: 26px; border-bottom: 1px solid var(--line); }
+  h1 {
+    margin: 0 0 6px;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+  header p { margin: 0; color: var(--ink-soft); font-size: 15px; }
+
+  h2 {
+    margin: 44px 0 14px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+
+  .addr {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 16px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: #fff;
+    font-family: var(--mono);
+    font-size: 13.5px;
+    word-break: break-all;
+  }
+  .addr span { flex: 1; }
+  .addr button {
+    flex: none;
+    padding: 7px 13px;
+    border: 1px solid var(--ink);
+    border-radius: 6px;
+    background: var(--ink);
+    color: #fff;
+    font: inherit;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .addr button:active { background: #000; }
+
+  ol { margin: 18px 0 0; padding-left: 20px; }
+  ol li { margin-bottom: 8px; }
+  code {
+    font-family: var(--mono);
+    font-size: 13px;
+    padding: 1px 5px;
+    border-radius: 4px;
+    background: #efece5;
+  }
+
+  .pkg {
+    display: flex;
+    gap: 14px;
+    padding: 18px 0;
+    border-top: 1px solid var(--line);
+  }
+  .pkg:last-child { border-bottom: 1px solid var(--line); }
+  .pkg-body { flex: 1; min-width: 0; }
+  .pkg-name { font-weight: 600; font-size: 17px; }
+  .pkg-desc { margin: 3px 0 0; color: var(--ink-soft); font-size: 14.5px; }
+  .pkg-meta {
+    flex: none;
+    text-align: right;
+    font-family: var(--mono);
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--ink-soft);
+  }
+  .pkg-meta b { display: block; color: var(--accent); font-weight: 600; }
+
+  footer {
+    margin-top: 52px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-soft);
+    font-size: 13.5px;
+  }
+  footer a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); }
+  footer a:hover { border-bottom-color: var(--ink); }
+
+  .note {
+    margin-top: 16px;
+    padding: 12px 14px;
+    border-left: 3px solid var(--accent);
+    background: #f6f1e9;
+    font-size: 13.5px;
+    color: #4a3a30;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Axs Repo</h1>
+    <p>个人 iOS 越狱插件源 · 适配 roothide 隐藏根越狱</p>
+  </header>
+
+  <h2>添加到 Sileo</h2>
+  <div class="addr">
+    <span id="addr">https://nocebook.github.io/repo/</span>
+    <button id="copy" type="button">复制</button>
+  </div>
+  <ol>
+    <li>打开 Sileo，点底部「源」</li>
+    <li>右上角 <code>+</code>，粘贴上面的地址</li>
+    <li>提示「未签名的源」时选择继续添加</li>
+  </ol>
+  <div class="note">
+    源未做 GPG 签名，所以 Sileo 会提示无法验证来源。包的内容和哈希由源索引约束，装之前可以先看一眼 Packages 里的 SHA256。
+  </div>
+
+  <h2>包</h2>
+  <div class="pkg">
+    <div class="pkg-body">
+      <div class="pkg-name">完美液态玻璃</div>
+      <p class="pkg-desc">把系统毛玻璃重做成液态玻璃质感：控制中心、Dock、文件夹、通知与桌面小组件。小组件按内存预算分级，默认零新增图层，避免地图类组件被系统杀掉后空白。</p>
+    </div>
+    <div class="pkg-meta">
+      <b>5.2.0-4</b>
+      iphoneos-arm64<br>
+      25 KB
+    </div>
+  </div>
+
+  <footer>
+    源码与构建：<a href="https://github.com/Nocebook/LiquidGlass">github.com/Nocebook/LiquidGlass</a><br>
+    索引文件：<a href="/repo/Packages">Packages</a>
+  </footer>
+</main>
+<script>
+  var addr = document.getElementById('addr');
+  var btn = document.getElementById('copy');
+  btn.addEventListener('click', function () {
+    var text = addr.textContent.trim();
+    var done = function () {
+      btn.textContent = '已复制';
+      setTimeout(function () { btn.textContent = '复制'; }, 1600);
+    };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(done);
+    } else {
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+      done();
+    }
+  });
+</script>
+</body>
+</html>

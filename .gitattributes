@@ -1,0 +1,7 @@
+# apt 索引必须是纯 LF，多一个 \r 就会让 Sileo 解析出错
+* text=auto eol=lf
+Packages text eol=lf
+Release text eol=lf
+*.gz binary
+*.png binary
+*.deb binary
