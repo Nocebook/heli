@@ -1,16 +1,17 @@
 Package: com.heli.liquid
 Name: liquid (HL)
-Version: 7.0.0-40
+Version: 7.1.0-42
 Architecture: iphoneos-arm64
 Section: Heli
 Maintainer: Heli
 Author: Heli
 Depends: mobilesubstrate | ellekit, preferenceloader, firmware (>= 15.0)
-Description: 把系统毛玻璃重写成液态玻璃：更强模糊与饱和度、整片玻璃膜、锥形定向描边、圆角边缘折射，覆盖主屏、Dock、文件夹、搜索胶囊、资源库、上下文菜单、控制中心、通知、弹窗、灵动岛与小组件，全部场景独立开关。灵动岛改为挂在 SystemAperture 容器上（收起/展开自适配），不再 hook 窗口。小组件不替换模糊，规避快照白屏；锁屏与整屏背景虚化交给系统。完全免费，无需激活码。
-Filename: debs/com.heli.liquid_7.0.0-40_iphoneos-arm64.deb
-Size: 58640
-Installed-Size: 276
-MD5sum: ccdb448d1720333bb9db998c6975d23f
-SHA1: bbd1a7521c42e8fce9e657f5722055f69f0fbe55
-SHA256: afac2c17910edf20aa4b1568e15056e6fe45c6f141dd2c125084fe0b91ddba2f
+Description: 把系统毛玻璃重写成液态玻璃：更强模糊与饱和度、整片玻璃膜、锥形定向描边、圆角边缘折射，覆盖主屏、Dock、文件夹、搜索胶囊、资源库、上下文菜单、控制中心、通知、弹窗、灵动岛与小组件，全部场景独立开关。灵动岛挂在 SystemAperture 容器上并接管容器布局，收起/展开即时跟随。小组件不替换模糊，规避快照白屏；锁屏与整屏背景虚化交给系统。7.1.0 重点压功耗：默认模糊 120→88、网格面数降 40%~55%、玻璃膜与底阴影合并成一层、低电量模式自动降档、空闲时不再反复重设图层、第三方 App 内默认不再改写系统模糊（可开）。完全免费，无需激活码。
+Filename: debs/com.heli.liquid_7.1.0-42_iphoneos-arm64.deb
+Size: 61640
+Installed-Size: 242
+MD5sum: 9a0e5f5fbaaab787d8dea64b81cb2389
+SHA1: 26914219d111e7a9373692abe017cef522da36b9
+SHA256: f5d4013af40dec6cd9bae6a1ff313496e508843fb494edaa090d7053245cd44c
 Icon: https://nocebook.github.io/heli/icon.png
+
