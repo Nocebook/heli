@@ -1,17 +1,17 @@
 Package: com.heli.liquid
 Name: liquid (HL)
-Version: 7.2.0-44
+Version: 7.3.0-47
 Architecture: iphoneos-arm64
 Section: Heli
 Maintainer: Heli
 Author: Heli
 Depends: mobilesubstrate | ellekit, preferenceloader, firmware (>= 15.0)
-Description: 把系统毛玻璃重写成液态玻璃：更强模糊与饱和度、整片玻璃膜、锥形定向描边、圆角边缘折射，覆盖主屏、Dock、文件夹、搜索胶囊、资源库、上下文菜单、控制中心、通知、弹窗、灵动岛与小组件，全部场景独立开关。小组件不替换模糊，规避快照白屏；锁屏与整屏背景虚化交给系统。7.2.0 修安装体验与稳定性：安装与卸载都不再自动杀 SpringBoard，重启交给包管理器那个「重启/注销」按钮；新增启动看门狗，万一桌面在启动阶段崩了会自动降级成「只保留模糊」，不会再卡在安全模式；撤掉对系统类 layoutSubviews 的运行时挂钩，改用幂等低频轮询；所有图层几何加 NaN 与异常拦截。同时保留 7.1.0 的省电配平：默认模糊 88、网格降密、图层合并、低电量自动降档。完全免费，无需激活码。
-Filename: debs/com.heli.liquid_7.2.0-44_iphoneos-arm64.deb
-Size: 64344
-Installed-Size: 242
-MD5sum: a2bedba5c431378456ab1860e05a1023
-SHA1: 18bfdeb6ac7c457e0099c448ab88ea8fc141a8d1
-SHA256: be17dd88a58855620c311242f6f4801c6786d2a1b16bd4b51344968a7b7971c7
+Description: 把系统毛玻璃重写成液态玻璃：更强模糊与饱和度、整片玻璃膜、定向描边、圆角边缘折射，覆盖主屏、Dock、文件夹、搜索胶囊、资源库、上下文菜单、控制中心、通知、弹窗、灵动岛与小组件，全部场景独立开关。小组件不替换模糊，规避快照白屏；锁屏与整屏背景虚化交给系统。7.3.0 修「装上就安全模式、怎么装都用不了」：① 灵动岛不再在启动时自行运行，改由启动保护放行后才启动，且默认关闭；② 看门狗状态改用 CFPreferences 存放，修正沙盒写不进去导致降级失效、无限崩溃循环的问题；③ 玻璃膜/描边/折射一律推迟到桌面完全启动 12 秒后才生效，避开安全模式判定窗口；④ 描边默认回到验证过的线性形态，锥形渐变改为单独开关；⑤ 安装与卸载都不再自动杀 SpringBoard，重启交给包管理器的「重启」按钮。完全免费，无需激活码。
+Filename: debs/com.heli.liquid_7.3.0-47_iphoneos-arm64.deb
+Size: 65712
+Installed-Size: 244
+MD5sum: 18cbaf1eae7d2b291a9d8d70815917d7
+SHA1: e2a018814fcbed7bb9aa0fa9ed603b4eabc10bc3
+SHA256: dec2df1a3771aa62920ac4de40cf897ce6e50419633a2417a151aa2983d9a8a4
 Icon: https://nocebook.github.io/heli/icon.png
 
